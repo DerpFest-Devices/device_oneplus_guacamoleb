@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackagesDevice
 
+# NoCutout
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+    
 # Vibrator HAL
 #$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 PRODUCT_PACKAGES += \
