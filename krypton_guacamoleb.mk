@@ -25,6 +25,9 @@ PRODUCT_AAPT_CONFIG := xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
+#GAPPS
+GAPPS_BUILD := true
+
 # Boot animation
 scr_resolution := 1080
 TARGET_SCREEN_HEIGHT := 2240
