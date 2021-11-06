@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
 # Mark as official build
 OFFICIAL_BUILD := true
 
+# Remove some prebuilt apps
+PRODUCT_PACKAGES += \
+    RemovePackagesDevice
+
 # OPFeature
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
