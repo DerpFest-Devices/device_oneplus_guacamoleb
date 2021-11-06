@@ -8,6 +8,7 @@ $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/guacamoleb/guacamoleb-vendor.mk)
+$(call inherit-product-if-exists, vendor/addons/google/camera/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
