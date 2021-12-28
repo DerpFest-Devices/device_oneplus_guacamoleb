@@ -2,10 +2,10 @@
     <!-- Keyguard Indication -->
     <dimen name="keyguard_indication_margin_bottom">20dp</dimen>
     <!-- Absolute distance of the top position of alert slider from the top of the display -->
-    <integer name="alert_slider_top_y">375</integer>
+    <!--<integer name="alert_slider_top_y">375</integer>-->
 
     <!-- Absolute width of the alert slider -->
-    <integer name="alertslider_width">130</integer>
+    <!--<integer name="alertslider_width">130</integer>-->
     
     <!-- FOD recognizing animation -->
     <dimen name="udfps_animation_size">550.0px</dimen>
