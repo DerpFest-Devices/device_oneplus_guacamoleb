@@ -11,10 +11,13 @@ $(call inherit-product, vendor/oneplus/guacamoleb/guacamoleb-vendor.mk)
 #$(call inherit-product-if-exists, vendor/addons/google/camera/config.mk)
 #$(call inherit-product-if-exists, vendor/oneplus/camera/camera-vendor.mk)
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-krypton
+    $(LOCAL_PATH)/overlay-derp
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -28,7 +31,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom
 
 # Mark as official build
-OFFICIAL_BUILD := true
+#OFFICIAL_BUILD := true
 
 # Remove some prebuilt apps
 PRODUCT_PACKAGES += \
@@ -43,7 +46,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
 
 # Vibrator HAL
-$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+#$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl:64 \
+    android.hardware.vibrator@1.0-service
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

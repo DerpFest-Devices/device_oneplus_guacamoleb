@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 
 # Inherit some common KOSP stuff.
-$(call inherit-product, vendor/krypton/configs/KryptonCommon.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := krypton_guacamoleb
+PRODUCT_NAME := derp_guacamoleb
 PRODUCT_DEVICE := guacamoleb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1905
@@ -25,8 +25,12 @@ PRODUCT_AAPT_CONFIG := xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
-#GAPPS
-GAPPS_BUILD := true
+# Setup Derp options
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+
+#FOD Animations
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Boot animation
 scr_resolution := 1080
