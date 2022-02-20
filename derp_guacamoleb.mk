@@ -32,6 +32,9 @@ TARGET_GAPPS_ARCH := arm64
 #FOD Animations
 EXTRA_UDFPS_ANIMATIONS := true
 
+# Official-ify
+DERP_BUILDTYPE := Official
+
 # Boot animation
 scr_resolution := 1080
 TARGET_SCREEN_HEIGHT := 2240
