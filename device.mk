@@ -30,16 +30,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
-# Mark as official build
-#OFFICIAL_BUILD := true
-
 # Remove some prebuilt apps
 PRODUCT_PACKAGES += \
     RemovePackagesDevice
-
-# Device Personalization Services
-PRODUCT_PACKAGES += \
-    MatchmakerPrebuilt
 
 # OPFeature
 PRODUCT_COPY_FILES += \
