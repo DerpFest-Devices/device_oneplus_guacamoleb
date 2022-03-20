@@ -35,8 +35,11 @@ TARGET_GAPPS_ARCH := arm64
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-#FOD Animations
+# FOD Animations
 EXTRA_UDFPS_ANIMATIONS := true
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Official-ify
 DERP_BUILDTYPE := Official
