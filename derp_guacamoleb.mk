@@ -35,6 +35,9 @@ TARGET_GAPPS_ARCH := arm64
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Blur properties
+TARGET_USES_BLUR := true
+
 # FOD Animations
 EXTRA_UDFPS_ANIMATIONS := true
 
